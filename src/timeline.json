@@ -1,0 +1,53 @@
+{
+  "project": "MockTalk.ai — AI Video Production MVP",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "durationFrames": 1800,
+  "masterAudio": "audio/master.mp3",
+  "clips": [
+    {
+      "id": "intro-avatar",
+      "kind": "avatar",
+      "startFrame": 0,
+      "durationFrames": 360,
+      "phraseId": "intro",
+      "headline": "Your next interview starts here",
+      "subheading": "Presenter placeholder — future HeyGen clip"
+    },
+    {
+      "id": "news-card",
+      "kind": "headline",
+      "startFrame": 360,
+      "durationFrames": 300,
+      "phraseId": "industry-news",
+      "headline": "How AI is changing interviews",
+      "subheading": "Illustrative article card — not a real news screenshot"
+    },
+    {
+      "id": "comparison-motion",
+      "kind": "comparison",
+      "startFrame": 660,
+      "durationFrames": 420,
+      "phraseId": "comparison",
+      "headline": "Old approach vs AI practice"
+    },
+    {
+      "id": "workflow-motion",
+      "kind": "workflow",
+      "startFrame": 1080,
+      "durationFrames": 360,
+      "phraseId": "workflow",
+      "headline": "Our production pipeline"
+    },
+    {
+      "id": "outro-avatar",
+      "kind": "avatar",
+      "startFrame": 1440,
+      "durationFrames": 360,
+      "phraseId": "outro",
+      "headline": "Practice with confidence",
+      "subheading": "Presenter placeholder — future HeyGen clip"
+    }
+  ]
+}

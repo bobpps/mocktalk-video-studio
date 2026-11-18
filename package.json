@@ -1,0 +1,30 @@
+{
+  "name": "mocktalk-video-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local AI-friendly video editing MVP for MockTalk.ai",
+  "scripts": {
+    "prepare:audio": "node scripts/ensure-demo-audio.mjs",
+    "predev": "npm run prepare:audio",
+    "dev": "remotion studio src/index.ts",
+    "prevalidate": "npm run prepare:audio",
+    "validate": "node scripts/validate-timeline.mjs",
+    "prepreview": "npm run prepare:audio",
+    "preview": "remotion render src/index.ts MockTalkDemo out/preview.mp4 --frames=0-299",
+    "prerender": "npm run prepare:audio",
+    "render": "remotion render src/index.ts MockTalkDemo out/demo.mp4",
+    "compositions": "remotion compositions src/index.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.543",
+    "@remotion/media": "4.0.543",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.543"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.8.3"
+  }
+}
